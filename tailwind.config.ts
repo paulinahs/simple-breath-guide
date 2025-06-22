@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -68,6 +69,9 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			transitionDuration: {
+				'4000': '4000ms',
+			},
 			keyframes: {
 				'accordion-down': {
 					from: {
@@ -84,11 +88,23 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'breathe': {
+					'0%': {
+						transform: 'scale(1)',
+					},
+					'50%': {
+						transform: 'scale(1.1)',
+					},
+					'100%': {
+						transform: 'scale(1)',
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'breathe': 'breathe 8s ease-in-out infinite',
 			}
 		}
 	},
