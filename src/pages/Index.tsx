@@ -45,21 +45,21 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-stone-50 via-amber-50 to-orange-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-stone-50 via-neutral-100 to-rose-50 flex items-center justify-center p-4">
       <div className="text-center max-w-md w-full">
         {/* Breathing Circle */}
         <div className="mb-12 flex justify-center">
           <div 
-            className={`w-48 h-48 rounded-full bg-gradient-to-br from-amber-200 to-orange-200 flex items-center justify-center transition-all duration-4000 ease-in-out ${
+            className={`w-48 h-48 rounded-full bg-gradient-to-br from-stone-300 to-rose-300 flex items-center justify-center transition-all duration-4000 ease-in-out ${
               isActive 
                 ? breatheIn 
-                  ? 'scale-110 shadow-2xl shadow-amber-200/50' 
-                  : 'scale-90 shadow-lg shadow-orange-200/30'
-                : 'scale-100 shadow-xl shadow-stone-200/40'
+                  ? 'scale-110 shadow-2xl shadow-stone-300/50' 
+                  : 'scale-90 shadow-lg shadow-rose-300/30'
+                : 'scale-100 shadow-xl shadow-neutral-300/40'
             }`}
           >
-            <div className="w-32 h-32 rounded-full bg-stone-100/40 backdrop-blur-sm flex items-center justify-center">
-              <div className="w-16 h-16 rounded-full bg-amber-100/60 backdrop-blur-sm"></div>
+            <div className="w-32 h-32 rounded-full bg-stone-100/50 backdrop-blur-sm flex items-center justify-center">
+              <div className="w-16 h-16 rounded-full bg-neutral-200/60 backdrop-blur-sm"></div>
             </div>
           </div>
         </div>
@@ -95,8 +95,8 @@ const Index = () => {
             onClick={handleStart}
             className={`px-8 py-3 rounded-full text-white font-medium transition-all duration-300 ${
               isActive 
-                ? 'bg-gradient-to-r from-orange-400 to-red-400 hover:from-orange-500 hover:to-red-500 shadow-lg hover:shadow-orange-200/50' 
-                : 'bg-gradient-to-r from-amber-400 to-orange-400 hover:from-amber-500 hover:to-orange-500 shadow-lg hover:shadow-amber-200/50'
+                ? 'bg-gradient-to-r from-rose-400 to-red-400 hover:from-rose-500 hover:to-red-500 shadow-lg hover:shadow-rose-200/50' 
+                : 'bg-gradient-to-r from-stone-400 to-rose-400 hover:from-stone-500 hover:to-rose-500 shadow-lg hover:shadow-stone-200/50'
             }`}
           >
             {isActive ? (
